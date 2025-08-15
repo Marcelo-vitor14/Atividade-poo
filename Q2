@@ -1,0 +1,50 @@
+public class Main {
+    public static void main(String[] args) {
+        Carro c = new Carro();
+        c.ligando = true;
+        c.velocidade = 0;
+        c.modelo ="Ford";
+        c.ano = 2015;
+        c.cor ="Vermelho";
+        c.desligando = false;
+
+
+        System.out.println(c.ligando);
+        System.out.println(c.velocidade);
+
+   c.ligar();
+   c.acelerar();
+   System.out.println(c.velocidade);
+   c.frear();
+   System.out.println(c.velocidade);
+   c.desligar();
+   System.out.println(c.desligando);
+   System.out.println(c.velocidade);
+   System.out.println(c.modelo);
+    }
+}
+
+
+
+
+public class Carro {
+    int velocidade;
+    boolean ligando;
+    String modelo;
+    boolean desligando;
+    String cor;
+    int ano;
+    void acelerar(){
+        velocidade+= 10;
+    }
+
+    void frear(){
+        velocidade -=10;
+        if(velocidade<=0){
+            velocidade=0;
+        }
+    }
+
+    void ligar(){ligando = true;}
+    void desligar(){ligando = false;}
+}
