@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+    Produto p = new Produto();
+    p.nome ="banana";
+    p.preco= 12;
+    p.estoque=30;
+    p.categoria="fruta";
+        System.out.println(p.nome);
+        System.out.println(p.preco);
+        System.out.println(p.categoria);
+        p.reduzirEstoque();
+        System.out.println(p.estoque);
+
+    }
+}
+public class Produto {
+    String nome;
+    double preco;
+    int estoque;
+    String categoria;
+    void reduzirEstoque(){
+        estoque -=1;
+    }
+}
