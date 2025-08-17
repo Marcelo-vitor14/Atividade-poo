@@ -1,0 +1,7 @@
+1) 6 classes necessarias sendo elas Produto,Venda,Cliente,pagamentoAVista,pagamentoParcelado,Pagamento
+2)Produto:Represnta oque a loja vende.
+Cliente:Identificar quem comprou o produto da loja.
+Venda:Organização das compras sendo compostas por:Cliente+Produto+Pagamento.
+pagamentoParcelado:Tipo de pagamento com parcelas e juros inclusos.
+pagamentoAVista:Tipo de pagamento sem juros e parcelas.
+Pagamento:Forma de pagamento utilizada pelo Cliente.
